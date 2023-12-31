@@ -1,3 +1,5 @@
+fastdtw/_fastdtw.cpp
+
 __pycache__/
 .cache/
 .eggs/
