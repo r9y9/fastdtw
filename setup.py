@@ -4,11 +4,8 @@ from setuptools.command.build_ext import build_ext as _build_ext
 import sys
 import warnings
 
-try:
-    from Cython.Build import cythonize
-    USE_CYTHON = True
-except ImportError:
-    USE_CYTHON = False
+from Cython.Build import cythonize
+USE_CYTHON = True
 
 # numpy path is needed for building with and without cython:
 try:
